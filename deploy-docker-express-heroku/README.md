@@ -17,15 +17,15 @@ express --view ejs --css sass deploy-docker-express-heroku
     ```
 
 - 創建 `heroku app`
-
+  `docker-express-app` 為專案名稱
     ```bash
-    heroku create [專案名稱]
+    heroku create docker-express-app
     ```
 
 ## Dockerize App 容器化應用程式
 
 
-打包 `image` 是以 `Dockerfile` 檔案為入口 (Dockerfile 詳細寫法 [🔗](https://philipzheng.gitbook.io/docker_practice/dockerfile/instructions))
+打包 `image` 是以 `Dockerfile` 檔案為入口 (Dockerfile 詳細寫法 [🔗](https://philipzheng.gitbook.io/docker_practice/dockerfile/instructions)
 
 - 建立 `Dockerfile`
 
@@ -58,7 +58,7 @@ docker build -t docker-express .
     ```
 
 - 推送 `image` 到 `heroku` 容器中心
-
+  `web --app` 為制式的寫法，後面加上 專案名稱 `docker-express-app`
     ```bash
     heroku container:push web --app docker-express-app
     ```
