@@ -1,13 +1,5 @@
 FROM node:12.21.0
-
 WORKDIR /app
-
-COPY ./ ./
-
+COPY . .
 RUN npm install
-
 CMD node ./bin/www
-
-
-
-
