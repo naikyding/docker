@@ -67,7 +67,8 @@
 
   - 確認版本 `vue -V`
 
-  - 安裝 vue cli `vue create [project name]`
+  - 創建專案 `vue create [project name]`
+
     在你安裝專案的同時，「本機」也會同步 `container` 的資料。
 
 - 退出容器 `exit`
